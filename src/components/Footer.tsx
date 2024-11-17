@@ -24,8 +24,8 @@ const Footer = () => {
   ];
 
   return (
-    <section className="my-10 grid grid-cols-1 lg:grid-cols-3 place-items-center">
-      <ul className="md:flex justify-center items-center gap-8">
+    <section className="mt-20 grid grid-cols-1 lg:grid-cols-3 place-items-center md:border-t-[1px] md:border-gray-300 ">
+      <ul className="md:flex justify-center items-center gap-8 md:py-8">
         {footerContent.map((footer, index) => (
           <li key={index}>
             <Link
@@ -40,7 +40,9 @@ const Footer = () => {
       <Link href="/">
         <img src="logo.png" alt="Logo" className="w-44 mx-auto block my-10" />
       </Link>
-      <p className="text-center">Copyright © {yearlyDate} Planet Earth Store</p>
+      <p className="text-center tracking-wider">
+        Copyright © {yearlyDate} Planet Earth Store
+      </p>
     </section>
   );
 };
