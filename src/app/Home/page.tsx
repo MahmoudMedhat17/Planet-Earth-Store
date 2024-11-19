@@ -1,8 +1,8 @@
-import Customers from "@/components/Home/Customers";
-import Hero from "@/components/Home/Hero";
-import Postcard from "@/components/Home/Postcard";
-import Posters from "@/components/Home/Posters";
-import Services from "@/components/Home/Services";
+import Customers from "@/components/HomePage/Customers";
+import Hero from "@/components/HomePage/Hero";
+import Postcard from "@/components/HomePage/Postcard";
+import Posters from "@/components/HomePage/Posters";
+import Services from "@/components/HomePage/Services";
 
 const Home = () => {
   return (

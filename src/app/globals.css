@@ -21,8 +21,4 @@ body,
   body {
     @apply bg-background text-foreground;
   }
-
-  /* webPadding {
-    @apply px-20;
-  } */
 }

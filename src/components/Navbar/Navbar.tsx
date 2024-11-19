@@ -19,7 +19,7 @@ import { usePathname } from "next/navigation";
 const navBar = [
   {
     title: "Home",
-    link: "/Home",
+    link: "/",
   },
   {
     title: "About",
