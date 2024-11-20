@@ -55,7 +55,9 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex items-center gap-6">
-            <ShoppingBag className="cursor-pointer" />
+            <Link href={`/shoppingCart`}>
+              <ShoppingBag className="cursor-pointer" />
+            </Link>
             <User className="cursor-pointer" />
           </div>
         </div>

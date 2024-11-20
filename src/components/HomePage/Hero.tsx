@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../ui/button";
 
 const Hero = () => {
@@ -11,9 +12,11 @@ const Hero = () => {
         <h2 className="text-lg sm:text-2xl tracking-widest uppercase text-accent/80">
           Multipurpose Store
         </h2>
-        <Button className="bg-secondary hover:bg-primary duration-200 rounded-lg">
-          <span className="uppercase text-white px-2 sm:px-4">Shop Now</span>
-        </Button>
+        <Link href="/Shop">
+          <Button className="bg-secondary hover:bg-primary duration-200 rounded-lg">
+            <span className="uppercase text-white px-2 sm:px-4">Shop Now</span>
+          </Button>
+        </Link>
       </div>
     </section>
   );

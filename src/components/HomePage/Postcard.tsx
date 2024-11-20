@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../ui/button";
 
 const Postcard = () => {
@@ -12,14 +13,16 @@ const Postcard = () => {
         <h2 className="text-4xl font-medium tracking-widest uppercase">
           Give the Gift of a Postcard
         </h2>
-        <p className="opacity-60">
+        <p className="opacity-60 pb-4">
           Give the gift of a lasting memory with a postcard
         </p>
-        <Button className="bg-secondary hover:bg-primary hover:duration-300">
-          <span className="text-white uppercase tracking-widest">
-            Purchase A Postcard
-          </span>
-        </Button>
+        <Link href="/Shop">
+          <Button className="bg-secondary hover:bg-primary hover:duration-300">
+            <span className="text-white uppercase tracking-widest">
+              Purchase A Postcard
+            </span>
+          </Button>
+        </Link>
       </div>
     </section>
   );
