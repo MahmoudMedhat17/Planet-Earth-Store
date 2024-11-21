@@ -1,3 +1,5 @@
+"use client";
+
 import Customers from "@/components/HomePage/Customers";
 import Hero from "@/components/HomePage/Hero";
 import Postcard from "@/components/HomePage/Postcard";

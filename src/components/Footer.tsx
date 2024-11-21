@@ -24,7 +24,7 @@ const Footer = () => {
   ];
 
   return (
-    <section className="mt-20 grid grid-cols-1 lg:grid-cols-3 place-items-center md:border-t-[1px] md:border-gray-300 ">
+    <section className="mt-10 md:mt-20 grid grid-cols-1 lg:grid-cols-3 place-items-center md:border-t-[1px] md:border-gray-300 ">
       <ul className="md:flex justify-center items-center gap-8 md:py-8">
         {footerContent.map((footer, index) => (
           <li key={index}>

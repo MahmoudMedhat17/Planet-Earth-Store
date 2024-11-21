@@ -5,16 +5,11 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Menu } from "lucide-react";
-import { X } from "lucide-react";
 import { ShoppingBag } from "lucide-react";
 import { User } from "lucide-react";
-import { useState } from "react";
-import { usePathname } from "next/navigation";
 
 const navBar = [
   {
@@ -36,10 +31,8 @@ const navBar = [
 ];
 
 const Navbar = () => {
-  const [open, setOpen] = useState<boolean>();
-
   return (
-    <header className="px-5 py-8 lg:px-24 bg-transparent fixed w-full z-[50]">
+    <header className="px-5 py-5 lg:px-24 bg-white/60 fixed w-full z-[50]">
       <nav className="w-full flex justify-between items-center">
         <Link href="/">
           <img src="/logo.png" alt="Logo" className="w-28 h-8 object-contain" />
@@ -64,16 +57,9 @@ const Navbar = () => {
         <div className="sm:hidden">
           <DropdownMenu>
             <div className="flex gap-6 items-center">
-              <ShoppingBag className="size-10 cursor-pointer" />
-              <DropdownMenuTrigger
-                onClick={() => setOpen((prev) => !prev)}
-                className="w-12 h-12 bg-black"
-              >
-                {open ? (
-                  <Menu color="white" className="mx-auto" />
-                ) : (
-                  <X color="white" className="mx-auto" />
-                )}
+              <ShoppingBag className="size-6 md:size-10 cursor-pointer" />
+              <DropdownMenuTrigger>
+                <Menu className="size-6 md:size-10" />
               </DropdownMenuTrigger>
             </div>
             <DropdownMenuContent>
