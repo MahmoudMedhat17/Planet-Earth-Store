@@ -1,7 +1,9 @@
+"use client";
+
 import Postcards from "@/app/Shop/Postcards";
+import { Button } from "@/components/ui/button";
 
 const page = () => {
-
   return (
     <section className="pt-40 px-8 md:px-20">
       <div className="md:flex md:justify-center md:gap-10">
@@ -26,6 +28,14 @@ const page = () => {
             </p>
           </div>
           {/* Add to cart line with quantity option*/}
+          <div className="flex items-center gap-4">
+            <Button className="bg-white text-secondary">-</Button>
+            <span>1</span>
+            <Button className="bg-white text-secondary">+</Button>
+            <Button className="px-8 text-lg tracking-widest text-white bg-secondary hover:bg-primary hover:duration-300">
+              Add to cart
+            </Button>
+          </div>
         </div>
       </div>
 

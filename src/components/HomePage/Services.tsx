@@ -3,24 +3,6 @@ import { Package } from "lucide-react";
 import { HandHeart } from "lucide-react";
 
 const Services = () => {
-  //   const servicesInfo = [
-  //     {
-  //       icon: <Briefcase />,
-  //       title: "Secure Payment",
-  //       desc: "All our payments our SSL secured",
-  //     },
-  //     {
-  //       icon: <Package />,
-  //       title: "Delivered With Care",
-  //       desc: "Super fast shipping to your door",
-  //     },
-  //     {
-  //       icon: <HandHeart />,
-  //       title: "Excellent Service",
-  //       desc: "Live chat and phone support",
-  //     },
-  //   ];
-
   return (
     <section className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-4">
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start px-10 md:px-6 space-y-4 md:space-y-0 gap-4">
